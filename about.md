@@ -1,8 +1,8 @@
 ---
-title: About
+title: 关于
 permalink: /about/
 ---
 
-<p class="heavy-title"><a href="http://github.com/thinker3197/Ink">Ink</a> is a simple & minimalistic theme for <a href="http://jekyllrb.com">Jekyll</a>, a static site generator.</p>
+本人iOS开发工程师, 坐标北京, 希望和大家一起交流
 
->Designed and developed by [@thinker3197](https://github.com/thinker3197).
+>欢迎联系 kangbingbj@gmial.com
