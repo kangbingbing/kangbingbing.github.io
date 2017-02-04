@@ -5,7 +5,7 @@ image:        "http://placehold.it/400x200"
 author:       "Jhonathan"
 ---
 
-An h1 header
+这是主标题
 ============
 
 Paragraphs are separated by a blank line.
