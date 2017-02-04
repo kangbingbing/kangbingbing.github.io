@@ -1,8 +1,8 @@
 ---
-title: 关于
+title: 关于个人
 permalink: /about/
 ---
 
-本人iOS开发工程师, 坐标北京, 希望和大家一起交流
+iOS开发工程师, 坐标北京, 希望和大家一起交流
 
->欢迎联系 kangbingbj@gmial.com
+>欢迎联系 kangbingbj@gmail.com
