@@ -1,5 +1,5 @@
 name:               "kangbing"
-description:        "Just do it"
+description:        "The world of programming is fascinating"
 
 url:                ""
 author:             "kangbing"
@@ -12,9 +12,9 @@ pinterest:          ""
 linkedin:           ""
 facebook:           "bing.kang.92"
 
-disqus_shortname:   "thinker3197"
+disqus_shortname:   "kangbing"
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+background:         "http://apple.wallpapersfine.com/wallpapers/preview/1242x2208/w-9363.jpg"
 
 paginate:           5
 paginate_path:      "/page:num/"
