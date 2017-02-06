@@ -7,7 +7,7 @@ description: A blog about technology and stuff related
 
 # if it's an external image, update below for true
 # better with square images
-external-image: false
+external-image: true
 # picture: assets/images/profile.jpg
 picture: http://e.hiphotos.baidu.com/image/pic/item/960a304e251f95caf55328f0cc177f3e660952d5.jpg
 
