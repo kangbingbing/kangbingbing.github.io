@@ -9,7 +9,7 @@ description: A blog about technology and stuff related
 # better with square images
 external-image: true
 # picture: assets/images/profile.jpg
-picture: http://e.hiphotos.baidu.com/image/pic/item/960a304e251f95caf55328f0cc177f3e660952d5.jpg
+picture: https://avatars0.githubusercontent.com/u/15312953?v=3&u=fe8be8bda3cafac8ff163b25127cef6dda51b7d0&s=400
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -40,11 +40,11 @@ disqus:
 # if you don't have any of social below, comment the line
 facebook: bing.kang.92
 twitter: mytwitter
-# google: mygoogle
+google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
-# youtube: myyoutube
+linkedin: mylinkedin
+youtube: myyoutube
 # spotify: myspotify
 github: Mringkang
 # stackoverflow: 7044681/mystackoverflow
