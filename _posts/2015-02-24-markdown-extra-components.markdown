@@ -18,14 +18,14 @@ description: Markdown summary with different options
 
 You can pick as item to see how to apply in markdown.
 
-#### Especial Elements
+#### 特殊元素
 - [Evidence](#evidence)
 - [Side-by-Side](#side-by-side)
 - [Star](#star)
 - [Especial Breaker](#especial-breaker)
 - [Spoiler](#spoiler)
 
-#### External Elements
+#### 外部元素
 - [Gist](#gist)
 - [Codepen](#codepen)
 - [Slideshare](#slideshare)
