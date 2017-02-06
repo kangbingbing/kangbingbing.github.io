@@ -1,6 +1,13 @@
-source 'https://rubygems.org'
-gem 'jekyll'
+source 'http://rubygems.org'
 
-group :jekyll_plugins do
-  gem "jekyll-paginate"
-end
+gem 'jekyll'
+gem 'rake'
+gem 'rouge'
+gem 'html-proofer'
+gem 'jemoji'
+gem 'jekyll-mentions'
+gem 'jekyll-seo-tag'
+gem 'jekyll-feed'
+gem 'jekyll-sitemap'
+gem 'jekyll-gist'
+gem 'jekyll-paginate'

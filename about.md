@@ -1,6 +1,6 @@
 ---
-title: 关于个人
-permalink: /about/
+title: About
+layout: page
 ---
 
 iOS开发者，坐标北京，热爱开源、分享与交流。
