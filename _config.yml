@@ -25,7 +25,7 @@ permalink:          /:year/:month/:day/:title/
 markdown:           kramdown
 
 nav:
-  - name:           "关于"
+  - name:           "About"
     href:           "/about"
   - name:           "Hello Word"
     href:           "/releases"
