@@ -1,6 +1,6 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: kangbing
+bio: The world of programming is fascinating
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+url: http://www.kangbingbing.cn
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -37,7 +37,7 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
+facebook: bing.kang.92
 twitter: mytwitter
 # google: mygoogle
 # instagram: myinstagram
@@ -45,13 +45,13 @@ twitter: mytwitter
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: Mringkang
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
 medium: medium
 # vimeo: myvimeo
-email: myemail@gmail.com
+email: kangbingbj@gmail.com
 
 authors:
     johndoe:
