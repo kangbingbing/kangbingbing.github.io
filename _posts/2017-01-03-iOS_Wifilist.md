@@ -65,7 +65,7 @@ We added a new template containing the Network Extension entitlements to your te
 
 ### 2、申请包含 Network Extension 的描述文件
 
-![](/images/posts/Wifilist/PastedGraphic.png)
+![](http://ww1.sinaimg.cn/large/9e1008a3ly1fchns3kx0yj211m0n8n07)
 
 选择包含 Network Extension 的描述文件，后点击下载，下载完成双击描述文件。
 
@@ -73,13 +73,13 @@ We added a new template containing the Network Extension entitlements to your te
 
 Xcode Info.plist 里 Required background modes 添加 一个 network-authentication(item)
 
-![](/images/posts/Wifilist/infoplist.png)
+![](http://ww1.sinaimg.cn/large/9e1008a3ly1fchntdunt3j21ci026gm0)
 
 ### 4、配置 entitlements
 
 Demo.entitlements（Demo是项目名称） 里添加 Key-Value: com.apple.developer.networking.HotspotHelper -> YES
 
-![](/images/posts/Wifilist/entitlement.png)
+![](https://ws1.sinaimg.cn/large/9e1008a3ly1fchntwnuicj21d003sjrz)
 
 ### 5、iOS 获取 Wifi 列表代码实现
 
@@ -126,7 +126,7 @@ NEHotspotNetwork 里有如下信息：
 
 * 打开手机系统设置 -> WLAN -> 系统 Wifi 列表加载出来时，上面代码部分才会回调，才能获取到 Wifi 列表。
 
-<img src="/images/posts/Wifilist/WLAN.png" height="360" width="200">  
+![](https://ws1.sinaimg.cn/large/9e1008a3ly1fchnuhqs1ij20ku112gqh)
 
 这个时候你就能看到控制台源源不断的Log。
 
@@ -139,7 +139,7 @@ NEHotspotNetwork 里有如下信息：
 
 下面付一张来自 [TalkingData 对iOS操作系统的统计报表](https://www.talkingdata.com/index/#/device/os/zh_CN)，时间：2017-01-03
 
-<img src="/images/posts/Wifilist/systemVersion.png" height="280" width="600">  
+<img src="https://ws1.sinaimg.cn/large/9e1008a3ly1fchnvrrookj20sv0dhtfx" height="280" width="600">  
 
 >* 使用 Demo 我就不提供了，你如果没有申请 NetworkExtension 权限，提供了 Demo 也无法使用。
 
