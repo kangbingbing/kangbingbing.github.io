@@ -147,5 +147,7 @@ NEHotspotNetwork 里有如下信息：
 
 参考资源：[NEHotspotHelper NetworkExtension API iOS9.0](http://stackoverflow.com/questions/31704292/nehotspothelper-networkextension-api-ios9-0)
 
+文章来源[http://baixin.io/2017/01/iOS_Wifilist/](http://baixin.io/2017/01/iOS_Wifilist/)
+
 
 

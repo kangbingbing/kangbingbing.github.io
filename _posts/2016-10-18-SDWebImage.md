@@ -18,7 +18,7 @@ category: blog
 
 第一篇文章为什么选择 `SDWebImage`, 原因其实我也忘了.... :(
 
-##简洁的接口
+## 简洁的接口
 
 首先来介绍一下这个 [SDWebImage](https://github.com/rs/SDWebImage) 这个著名开源框架吧, 这个开源框架的主要作用就是:
 
@@ -41,7 +41,7 @@ category: blog
 
 我们已经看到了这个框架简洁的接口, 接下来我们看一下 `SDWebImage` 是用什么样的方式优雅地实现异步加载图片和缓存的功能呢?
 
-##复杂的实现
+## 复杂的实现
 
 其实复杂只是相对于简洁而言的, 并不是说 `SDWebImage` 的实现就很糟糕, 相反, 它的实现还是非常 `amazing` 的, 在这里我们会忽略很多的实现细节, 并不会对每一行源代码逐一解读.
 
@@ -51,7 +51,7 @@ category: blog
 
 这张图片已经将这个框架是如何组织的基本展示了出来, `UIImageView+WebCache` 和 `UIButton+WebCache` 直接为表层的 `UIKit` 框架提供接口, 而 `SDWebImageManger` 负责处理和协调 `SDWebImageDownloader` 和 `SDWebImageCache`. 并与 `UIKit` 层进行交互, 而底层的一些类为更高层级的抽象提供支持.
 
-###UIImageView+WebCache
+### UIImageView+WebCache
 
 接下来我们就以 `UIImageView+WebCache` 中的
 
@@ -85,7 +85,7 @@ category: blog
 
 这里就不再复制出这个方法的全部实现了.
 
-####操作的管理
+#### 操作的管理
 
 这是这个方法的第一行代码:
 
@@ -113,7 +113,7 @@ category: blog
 
 ----
 
-####占位图的实现
+#### 占位图的实现
 
 ```objectivec
 // UIImageView+WebCache
@@ -128,7 +128,7 @@ if (!(options & SDWebImageDelayPlaceholder)) {
 
 ----
 
-####获取图片
+#### 获取图片
 
 ```objectivec
 // UIImageView+WebCache
@@ -168,7 +168,7 @@ dispatch_main_sync_safe(^{
 
 ----
 
-####dispatch\_main\_sync\_safe 宏定义
+#### dispatch\_main\_sync\_safe 宏定义
 
 上述代码中的 `dispatch_main_sync_safe` 是一个宏定义, 点进去一看发现宏是这样定义的
 
@@ -202,7 +202,7 @@ dispatch_main_sync_safe(^{
 [SDWebImageManager.sharedManager downloadImageWithURL:options:progress:completed:]
 ```
 
-###SDWebImageManager
+### SDWebImageManager
 
 在 [SDWebImageManager.h](https://github.com/rs/SDWebImage/blob/master/contents/SDWebImage/SDWebImageManager.h) 中你可以看到关于 `SDWebImageManager` 的描述:
 
@@ -229,7 +229,7 @@ if (![url isKindOfClass:NSURL.class]) {
 
 ----
 
-####SDWebImageCombinedOperation
+#### SDWebImageCombinedOperation
 
 当 `url` 被正确传入之后, 会实例一个非常奇怪的 "operation", 它其实是一个遵循 `SDWebImageOperation` 协议的 `NSObject` 的子类. 而这个协议也非常的简单:
 
@@ -323,7 +323,7 @@ operation.cancelBlock = ^{
     }
 ```
 
-###SDWebImageCache
+### SDWebImageCache
 
 [SDWebImageCache.h](https://github.com/rs/SDWebImage/blob/master/contents/SDWebImage/SDImageCache.h) 这个类在源代码中有这样的注释:
 
@@ -375,7 +375,7 @@ if (diskImage) {
 
 这些就是 `SDImageCache` 的核心内容了, 而接下来将介绍如果缓存没有命中, 图片是如何被下载的.
 
-###SDWebImageDownloader
+### SDWebImageDownloader
 
 按照之前的惯例, 我们先来看一下 [SDWebImageDownloader.h](https://github.com/rs/SDWebImage/blob/master/contents/SDWebImage/SDWebImageDownloader.h) 中对这个类的描述.
 
@@ -392,7 +392,7 @@ if (diskImage) {
       completed:(SDWebImageDownloaderCompletedBlock)completedBlock;
 ```
 
-####回调
+#### 回调
 
 这个方法直接调用了另一个关键的方法:
 
@@ -493,7 +493,7 @@ operation = [[SDWebImageDownloaderOperation alloc]
 
 只有将它加入到这个下载队列中, 这个操作才会执行.
 
-###SDWebImageDownloaderOperation
+### SDWebImageDownloaderOperation
 
 这个类就是处理 HTTP 请求, URL 连接的类, 当这个类的实例被加入队列之后, `start` 方法就会被调用, 而 `start` 方法首先就会产生一个 `NSURLConnection`.
 
@@ -531,7 +531,7 @@ operation = [[SDWebImageDownloaderOperation alloc]
 [[NSNotificationCenter defaultCenter] postNotificationName:SDWebImageDownloadStartNotification object:self];
 ```
 
-####代理
+#### 代理
 
 在 `start` 方法调用之后, 就是 `NSURLConnectionDataDelegate` 中代理方法的调用.
 
@@ -558,7 +558,7 @@ operation = [[SDWebImageDownloaderOperation alloc]
 
 这个方法执行的全部过程了.
 
-##流程图
+## 流程图
 
 我们使用一个流程图来表示上述方法所执行的全过程.
 
@@ -576,7 +576,7 @@ SDWebImage 中为 UIView 提供了一个分类叫做 WebCache, 这个分类中�
     
 而在图片下载完成之后, 就会在主线程设置 `image` 属性, 完成整个图像的异步下载和配置.
 
-##总结
+## 总结
 
 `SDWebImage` 的图片加载过程其实很符合我们的直觉: 
 
