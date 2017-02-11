@@ -47,7 +47,7 @@ You can try the evidence!
 
 ## Side-by-side
 
-Like the [Medium](https://medium.com/) component.
+Like the [Medium](https://medium.com/).
 
 **Image** on the left and **Text** on the right:
 

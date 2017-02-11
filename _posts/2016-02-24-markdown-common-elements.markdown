@@ -43,7 +43,7 @@ This note **demonstrates** some of what [Markdown][some/link] is *capable of doi
 
 ## Headings
 
-There are six levels of headings. They correspond with the six levels of HTML headings. You've probably noticed them already in the page. Each level down uses one more hash character. But we are using just 4 of them.
+There are six levels of headings. They correspond with the six levels of HTML headings. You've probably noticed them already in the page. Each level down uses one more hash character. 
 
 # Headings can be small
 
