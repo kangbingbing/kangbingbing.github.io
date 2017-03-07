@@ -34,16 +34,38 @@ layout: page
             <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
         {% endif %}
     </div>
+
+
 {% endif %}
 
 {% if site.related %}
     {% include related.html %}
 {% endif %}
 
-{% if site.show-author %}
-    {% include author.html %}
-{% endif %}
+<!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="page.index" data-title="page.title" data-url="page.url"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"kangbingbing"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+<!-- 多说公共JS代码 end -->
 
-{% if site.disqus.categories contains page.category %}
-    {% include disqus.html %}
-{% endif %}
+
+<!-- 底部作者主页 -->
+<!-- {% if site.show-author %} -->
+    <!-- {% include author.html %} -->
+<!-- {% endif %} -->
+
+<!-- 跳转网址 -->
+<!-- {% if site.disqus.categories contains page.category %} -->
+    <!-- {% include disqus.html %} -->
+<!-- {% endif %} -->
