@@ -44,23 +44,23 @@ layout: page
 
 
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="page.id" data-title="page.title" data-url="page.url"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+  var cloudTieConfig = {
+    url: document.location.href, 
+    sourceId: "",
+    productKey: "6abecbe54c1142369cd1615fd54ca6d7",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:"kangbingbing"};
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] 
-            || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-    </script>
-    
+<script>    
 <!-- 多说公共JS代码 end -->
+
+
+
+
+
 
 
 <!-- 底部作者主页 -->
