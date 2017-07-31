@@ -12,6 +12,9 @@ category: blog
 
 #### 需求：线上生成电子合同，客户端预览。
 
+![](https://ws1.sinaimg.cn/large/9e1008a3ly1fhziu4tsang20ac0ige0o.gif)
+
+
 这里提供三种方法，不仅限于pdf，经测试，office格式文件同样支持。第二三种方法只能浏览本地文件，所以线上的必须先下载在浏览。
 
 ###	第一种方法最简单方便，webView加载。不仅能加载本地，也能加载线上的。
