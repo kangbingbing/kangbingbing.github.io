@@ -109,7 +109,7 @@ sass:
 gems:
   - jemoji
   - jekyll-mentions
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
