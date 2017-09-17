@@ -1,10 +1,11 @@
 # main text of home
-name: kangbing
-
-title: kangbing
+name: 
+  &id001
+  kangbing
 
 bio: The world of programming is fascinating
 
+title: *id001
 # twitter summary info
 description: A blog about technology and stuff related
 
