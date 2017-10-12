@@ -157,3 +157,6 @@ category: blog
 
 **这里下载用的AFN，为了模拟测试，把文件放到本机apache了(mac自带)。电脑本机ip就是服务器地址。路径/Library/WebServer/Documents下。**
 
+
+代码已上传至 [github](https://github.com/kangbingbing/KBPreviewPDF)
+
