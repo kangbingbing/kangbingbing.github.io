@@ -5,7 +5,7 @@ date: 2017-10-12
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- iOS
+- Python
 category: blog
 ---
 
