@@ -13,7 +13,7 @@ description: A blog about technology and stuff related
 # better with square images
 external-image: true
 # picture: assets/images/profile.jpg
-picture: http://ww1.sinaimg.cn/large/9e1008a3ly1ffw6ohaik7j20b40b40th.jpg
+picture: https://ws1.sinaimg.cn/large/9e1008a3ly1fq7hit6t13j20b40b40th.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -21,7 +21,7 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: http://www.kangbingbing.com
+url: https://www.kangbingbing.com
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
