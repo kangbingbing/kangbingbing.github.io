@@ -1,1 +1,1 @@
-#### kangbing's [blog](http://kangbingbing.com)
+#### kangbing's [blog](https://kangbingbing.com)
